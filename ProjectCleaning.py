@@ -8,9 +8,8 @@ datetime = data[data.columns[3]]
 primetype = data[data.columns[6]]
 lat = data[data.columns[20]]
 lon = data[data.columns[21]]
-location = data[data.columns[22]]
 
-d = {'Date / Time' : datetime, 'Primary Type' : primetype, 'Latitude' : lat, 'Longitude' : lon, 'Location' : location}
+d = {'Date / Time' : datetime, 'Primary Type' : primetype, 'Latitude' : lat, 'Longitude' : lon}
 df = pd.DataFrame(data=d)
 df = df.dropna()
 df = df.drop_duplicates()
